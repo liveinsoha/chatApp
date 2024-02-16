@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: chat
+
+logging.level:
+  org:
+    hibernate:
+      SQL: debug
+      orm.jdbc.bind: trace
+    springframework:
+      data:
+        mongodb:
+          core:
+            MongoTemplate: DEBUG
